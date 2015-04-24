@@ -1,5 +1,5 @@
-name = "Search embedded form"
-description = "Support module for search module testing of embedded forms."
+name = "Test search node tags"
+description = "Support module for Node search tags testing."
 package = Testing
 version = VERSION
 core = 7.x
