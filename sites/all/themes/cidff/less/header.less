@@ -3,7 +3,6 @@
   padding: 0;
 }
 body{
-  /*background: url(../images/bg_header.jpg) no-repeat 50% 0;*/
   .no-marg-padd();
 }
 
@@ -17,34 +16,10 @@ body{
 /*
 * Logo et slogan 
 *******************************************************************************/
-#navbar{
-  margin-top: 10px;
-}
+
 .navbar-header{
-  float: none;
-  .navbar-brand{
-    padding-right:0;
-  }
-  h1.navbar-brand{
-    margin-bottom: 0;
-    margin-top: 10px;
-    float: none;
-    a{
-      font-family: @baselineFontFamily;
-      color: @brand-baseline;
-      font-size: @font-size-h1;	
-      white-space: nowrap;
-      &:hover {
-        text-decoration: none;
-      }
-      @media @tablet {
-        float:left;
-      }
-      @media @wide {
-        float:right;
-      }
-      
-    }
+  a.logo{
+    margin-left: -20px;
   }  
   .slogan{
     font-family: @rockwellFamily;
