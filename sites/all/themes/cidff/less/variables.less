@@ -21,6 +21,10 @@
 @brand-danger:          #d9534f;
 @brand-baseline:        #000000;
 
+/* specific cidff *************************************************************/
+@opale-cidff:   #02A5A8;
+@orange-cidff:  #F9A11B;
+@gris-cidff:    #C0CDD5;
 
 //== Scaffolding
 //
@@ -130,14 +134,18 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-.icon-facebook{
-  
-}
+.icon-facebook:before{
+  content: "\e801";
+} 
 .icon-twitter:before{
   content: "\e800";
-  font-size: 8em;
 }
-
+.icon-youtube:before{
+  content: "\e802";
+}
+.icon-googleplus:before{
+  content: "\e803";
+}
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14

@@ -4,6 +4,7 @@
 }
 body{
   .no-marg-padd();
+  background: transparent url(../images/fond_top.png) repeat-x 0 0;
 }
 
 #skip-link{
@@ -17,56 +18,88 @@ body{
 * Logo et slogan 
 *******************************************************************************/
 
-.navbar-header{
-  a.logo{
-    margin-left: -20px;
-  }  
-  .slogan{
-    font-family: @rockwellFamily;
-    width: 162px;
-    border-top: 1px solid black;
-    margin-left: 193px;
-    text-align: center;
-    @media (max-width: @screen-sm-min) {
-      text-align: left;
-      margin-left: 120px;
-      width: 120px;
+.container {
+  & .navbar-header{
+    margin-right: inherit;
+    margin-left: inherit;
+    padding-left: 0;
+    float: none;
+    #aude{
+      color: white;
+      display: block;
+      background-color: @opale-cidff;
+      padding: 4px;
+      border-radius: 4px;
+      clear: both;
+      width: 100px;
+      text-align: center;
+      font-size: 0.8em;
+    }  
+    .slogan{
+      font-family: @rockwellFamily;
+      width: 162px;
+      border-top: 1px solid black;
+      margin-left: 193px;
+      text-align: center;
+      @media (max-width: @screen-sm-min) {
+        text-align: left;
+        margin-left: 120px;
+        width: 120px;
+      }
     }
+    & .col-md-6{
+      padding-left: 0;
+    }
+  }
+  & .navbar-collapse{
+    padding-left: 0;  
   }
 }
 /*
+* Menus top
+*******************************************************************************/
+.region-top-top {
+  background: transparent url(../images/fond_top.png) repeat-x 0 0;
+  & ul.menu>li>a{
+    color: white;
+    &:hover{
+      color: @gray-base;
+    }
+  }
+}
+
+/*
 * Menu principal
 *******************************************************************************/
-button.navbar-toggle{
-  margin-top: -25px;
-}
-#main-top-menu{
-  @media (min-width: @screen-sm-min) {
-    margin-top: 60px;
-  }
-  margin-top: -5px;
-  > ul > li > a{
-    text-transform: uppercase;
-    font-weight: bold;
-    color: @gray-base;
-    display: block;
-    box-shadow: 0px 0px 2px 2px #dfdfdf;
-    border-radius: 1px;
-    margin-right: 7px;
-    background-color: white;
-    padding: 10px;
-    &.active{
-      color: white;
-      box-shadow: 0px 0px 0px 0px #dfdfdf;
-      padding-bottom: 18px;
-      background-color:  @gray-base;
-      @media (min-width: @screen-sm-min) {
-        background: @gray-base url(../images/arrow-down-menu.png) no-repeat 50% 100%;
-      }
+
+#main-nav{
+  clear: both;
+  background-color: @orange-cidff;
+  height: 46px;
+  border-radius: 0 0 6px 6px;
+  & ul.navbar-nav li {
+    padding: 0;
+    & a{
+      display: block;
+      padding: 13px;
     }
+  }
+  & > ul>li>a{
+    color: white;
     &:hover{
-      color: white;
-      background-color: @gray-base;
+      color: @gray-base;
+      background-color: inherit;
     }
   }
+
 }
+/* moteur de recherche ********************************************************/
+form#search-block-form{
+  margin-top: 20px;
+  float: right;
+  width: 100%;
+  @media screen and (min-width:@screen-sm){
+    width: 50%;
+  }
+}
+
