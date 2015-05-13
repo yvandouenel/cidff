@@ -73,37 +73,49 @@
  * @ingroup themeable
  */
 ?>
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+<header id="navbar" role="banner">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
         <div class="navbar-collapse collapse">
           <nav role="navigation">
-            <?php print render($page['page_top']); ?>
+            <?php print render($page['top_top']); ?>
           </nav>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="navbar-header">
-      <?php if ($logo): ?>
-      <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" >
-        <img src="<?php print $logo; ?>" alt="Centre d'Information sur le Droit des Femmes et des Familles - retour accueil" />
-      </a>
-      <?php endif; ?>
+    <div class="navbar-header row">
+      <div class="col-md-6 col-sm-6">
+        <?php if ($logo): ?>
+          <h1>
+            <a class="logo" href="<?php print $front_page; ?>" >
+              <img src="<?php print $logo; ?>" alt="Centre d'Information sur le Droit des Femmes et des Familles - retour accueil" />
+            </a>
+            <span id="aude">Aude</span>
+          </h1>
+        <?php endif; ?>
 
-      <?php if (!empty($site_name)): ?>
-      <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-      <?php endif; ?>
+        <?php if (!empty($site_name)): ?>
+          <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+        <?php endif; ?>
 
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="col-md-6 col-sm-6" role="complementary">
+        <?php if (!empty($page['right_logo'])): ?>
+
+          <?php print render($page['right_logo']); ?>
+
+        <?php endif; ?>
+      </div>  
     </div>
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
@@ -125,15 +137,18 @@
 </header>
 
 <div class="main-container container">
+  <div class="row">
+    <div class="col-md-12">
+      <header role="banner" id="page-header">
+        <?php if (!empty($site_slogan)): ?>
+          <p class="lead"><?php print $site_slogan; ?></p>
+        <?php endif; ?>
 
-  <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
-
+        <?php print render($page['header']); ?>
+      </header> <!-- /#page-header -->
+    </div>
+    
+  </div>
   <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>
@@ -174,6 +189,8 @@
 
   </div>
 </div>
-<footer class="footer container">
+<footer class="main-footer">
+  <div  class="footer container">
   <?php print render($page['footer']); ?>
+  </div>
 </footer>
