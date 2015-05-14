@@ -1549,6 +1549,10 @@ body{margin:0;padding:0;background:url(../images/fond_top.png) repeat-x}
 #main-nav>ul>li>a:hover{color:#000;background-color:inherit}
 form#search-block-form{margin-top:20px;float:right;width:100%}
 @media screen and (min-width:768px){form#search-block-form{width:50%}}
-.main-container .custom_block_wrapper{padding:15px;border:1px solid #02a5a8;border-radius:8px}
+#block-menu-menu-actu-agenda{float:right}
+.main-container .custom_block_wrapper{padding:15px;border-radius:8px}
 .main-container .custom_block_wrapper .field-name-field-lire-la-suite{float:right}
+.main-container .contour-orange .custom_block_wrapper{border:1px solid #f9a11b}
+.main-container .contour-opale .custom_block_wrapper{border:1px solid #02a5a8}
+.main-container .contour-gris .custom_block_wrapper{border:1px solid #c0cdd5}
 footer.main-footer{background-color:#c0cdd5;min-height:100px}
