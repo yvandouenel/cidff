@@ -1529,6 +1529,7 @@ table .checkbox input[type=checkbox],table .radio input[type=radio]{max-width:in
 .alert-info a{color:#245269}
 .alert-warning a{color:#66512c}
 .alert-danger a{color:#843534}
+img{max-width:100%}
 .no-content{text-indent:-9000px;display:block}
 .main-container{padding-top:20px}
 .no-marg-padd{margin:0;padding:0}
