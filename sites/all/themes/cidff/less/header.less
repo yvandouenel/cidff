@@ -4,7 +4,10 @@
 }
 body{
   .no-marg-padd();
-  background: transparent url(../images/fond_top.png) repeat-x 0 0;
+  & header#navbar{
+    background: transparent url(../images/fond_top.png) repeat-x 0 0;
+  }
+  
 }
 
 #skip-link{
@@ -60,11 +63,17 @@ body{
 *******************************************************************************/
 .region-top-top {
   background: transparent url(../images/fond_top.png) repeat-x 0 0;
-  & ul.menu>li>a{
-    color: white;
-    &:hover{
-      color: @gray-base;
+  & ul.menu{ 
+    background-color: @opale-cidff;
+    & >li>a{
+      color: white;
+      &:hover{
+        color: @gray-base;
+      }
     }
+  }
+  & #block-menu-menu-pros, & #block-menu-menu-commodit-s-haut{
+    border-left: 2px solid @gris-cidff;
   }
 }
 
@@ -77,18 +86,25 @@ body{
   background-color: @orange-cidff;
   height: 46px;
   border-radius: 0 0 6px 6px;
+  padding-left: 10px;
   & ul.navbar-nav li {
     padding: 0;
     & a{
       display: block;
-      padding: 13px;
+      padding: 13px 13px 16px 13px;
+      font-weight: bold;
     }
   }
   & > ul>li>a{
     color: white;
     &:hover{
       color: @gray-base;
+      
+    }
+    &.active{
+      color: @gray-base;
       background-color: inherit;
+      background: url(../images/white_line.gif) no-repeat 50% 75%;
     }
   }
 
@@ -105,5 +121,24 @@ form#search-block-form{
 /* menu actu / agenda *********************************************************/
 #block-menu-menu-actu-agenda{
   float: right;
+  border-left: 50px solid white;
+  padding : 0 10px;
+  & ul.menu.nav > li{
+    float: left;
+    & > a{
+      padding: 13px 13px 13px 13px;
+      display: block;
+      color: white;
+      font-weight: bold;
+      &:hover{
+        color: @gray-base;
+      }
+      &.active{
+        color: @gray-base;
+        background: url(../images/white_line.gif) no-repeat 50% 75%;
+      }
+    }
+  }
+  
 }
 
