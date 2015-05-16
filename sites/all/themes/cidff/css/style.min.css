@@ -1,11 +1,5 @@
 @font-face{font-family:'Eligible bold';src:url(../fonts/Eligible-Bold/Eligible-Bold.eot);src:url(../fonts/Eligible-Bold/Eligible-Bold.eot?#iefix) format('embedded-opentype'),url(../fonts/Eligible-Bold/Eligible-Bold.woff) format('woff'),url(../fonts/Eligible-Bold/Eligible-Bold.ttf) format('truetype');font-weight:400;font-style:normal}
 @font-face{font-family:Rockwell;src:url(../fonts/Rockwell/Rock.TTF);font-weight:400;font-style:normal}
-@font-face{font-family:fontello;src:url(../images/fontello/font/fontello.eot?90885294);src:url(font/fontello.eot?90885294#iefix) format('embedded-opentype'),url(../images/fontello/font/fontello.woff?90885294) format('woff'),url(../images/fontello/font/fontello.ttf?90885294) format('truetype'),url(../images/fontello/font/fontello.svg?90885294#fontello) format('svg');font-weight:400;font-style:normal}
-[class*=" icon-"]:before,[class^=icon-]:before{font-family:fontello;font-style:normal;font-weight:400;font-size:50px;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.icon-facebook:before{content:"\e801"}
-.icon-twitter:before{content:"\e800"}
-.icon-youtube:before{content:"\e802"}
-.icon-googleplus:before{content:"\e803"}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
@@ -1535,6 +1529,12 @@ img{max-width:100%}
 .node .contour-orange{border:1px solid #f9a11b}
 .node .contour-opale{border:1px solid #02a5a8}
 .node .contour-gris{border:1px solid #c0cdd5}
+@font-face{font-family:fontello;src:url(../images/fontello/font/fontello.eot?90885294);src:url(font/fontello.eot?90885294#iefix) format('embedded-opentype'),url(../images/fontello/font/fontello.woff?90885294) format('woff'),url(../images/fontello/font/fontello.ttf?90885294) format('truetype'),url(../images/fontello/font/fontello.svg?90885294#fontello) format('svg');font-weight:400;font-style:normal}
+[class*=" icon-"]:before,[class^=icon-]:before{font-family:fontello;font-style:normal;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:2em}
+.icon-facebook:before{content:"\e801"}
+.icon-twitter:before{content:"\e800"}
+.icon-youtube:before{content:"\e802"}
+.icon-googleplus:before{content:"\e803"}
 .no-marg-padd,body{margin:0;padding:0}
 body header#navbar{background:url(../images/fond_top.png) repeat-x}
 #skip-link{position:absolute;width:1px;height:1px;top:-1000em;overflow:hidden}
@@ -1544,16 +1544,20 @@ body header#navbar{background:url(../images/fond_top.png) repeat-x}
 @media (max-width:768px){.container .navbar-header .slogan{text-align:left;margin-left:120px;width:120px}}
 .container .navbar-collapse,.container .navbar-header .col-md-6{padding-left:0}
 .region-top-top{background:url(../images/fond_top.png) repeat-x}
+.region-top-top #block-menu-menu-top-first ul.menu>li.first>a{margin-left:-20px}
 .region-top-top ul.menu{background-color:#02a5a8}
+.region-top-top ul.menu>li{float:left}
 .region-top-top ul.menu>li>a{color:#fff}
 .region-top-top ul.menu>li>a:hover{color:#000}
-.region-top-top #block-menu-menu-commodit-s-haut,.region-top-top #block-menu-menu-pros{border-left:2px solid #c0cdd5}
+.region-top-top ul.menu>li>a:active{color:#f7544c}
+.region-top-top ul.menu>li>a.active{background-color:#f7544c}
+.region-top-top #block-menu-menu-commodit-s-haut ul.menu>li.first a,.region-top-top #block-menu-menu-pros ul.menu>li.first a{border-left:2px solid #c0cdd5}
 #main-nav{clear:both;background-color:#f9a11b;height:46px;border-radius:0 0 6px 6px;padding-left:10px}
 #main-nav ul.navbar-nav li{padding:0}
-#main-nav ul.navbar-nav li a{display:block;padding:13px 13px 16px;font-weight:700}
+#main-nav ul.navbar-nav li a{display:block;padding:13px;font-weight:700}
 #main-nav>ul>li>a{color:#fff}
 #main-nav>ul>li>a:hover{color:#000}
-#main-nav>ul>li>a.active{color:#000;background:url(../images/white_line.gif) 50% 75% no-repeat}
+#main-nav>ul>li>a.active{color:#fff;background-color:#f7544c}
 form#search-block-form{margin-top:20px;float:right;width:100%}
 @media screen and (min-width:768px){form#search-block-form{width:50%}}
 #block-menu-menu-actu-agenda{float:right;border-left:50px solid #fff;padding:0 10px}
@@ -1561,11 +1565,14 @@ form#search-block-form{margin-top:20px;float:right;width:100%}
 #block-menu-menu-actu-agenda ul.menu.nav>li>a{padding:13px;display:block;color:#fff;font-weight:700}
 #block-menu-menu-actu-agenda ul.menu.nav>li>a:hover{color:#000}
 #block-menu-menu-actu-agenda ul.menu.nav>li>a.active{color:#000;background:url(../images/white_line.gif) 50% 75% no-repeat}
+#block-bean-facebook{float:right;clear:both;margin-top:20px}
+#block-bean-facebook a.icon-facebook:hover{color:#000;text-decoration:none}
 .main-container .custom_block_wrapper{padding:15px;border-radius:8px}
 .main-container .custom_block_wrapper .field-name-field-lire-la-suite{float:right}
 .main-container .contour-orange .custom_block_wrapper{border:1px solid #f9a11b}
 .main-container .contour-opale .custom_block_wrapper{border:1px solid #02a5a8}
 .main-container .contour-gris .custom_block_wrapper{border:1px solid #c0cdd5}
+.main-container .contour-rouge .custom_block_wrapper{border:1px solid #f7544c}
 .group-right>div{padding:0 0 0 20px}
 .webform-client-form input.form-text{width:150px}
 .webform-client-form .webform-component-email label{display:block}
@@ -1575,3 +1582,8 @@ footer.main-footer{background-color:#c0cdd5;min-height:100px}
 #block-menu-menu-menu-de-commodit-bas ul.menu li{float:left}
 #block-menu-menu-menu-de-commodit-bas ul.menu li a{color:#fff}
 #block-menu-menu-menu-de-commodit-bas ul.menu li a:hover{color:#000}
+.view-display-id-block_partner1{display:table;margin:0 auto}
+.view-display-id-block_partner1 .views-row{display:inline-table;margin:5px 20px 0 0;vertical-align:bottom}
+.node-ressource-documentaire .image{padding-left:15px}
+.node-ressource-documentaire .image img{vertical-align:middle;margin-bottom:6px}
+.node-ressource-documentaire .image a{font-size:1.2em}

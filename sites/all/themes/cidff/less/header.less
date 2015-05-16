@@ -6,8 +6,7 @@ body{
   .no-marg-padd();
   & header#navbar{
     background: transparent url(../images/fond_top.png) repeat-x 0 0;
-  }
-  
+  } 
 }
 
 #skip-link{
@@ -17,10 +16,10 @@ body{
   top: -1000em;
   overflow: hidden; 
 }
+
 /*
 * Logo et slogan 
 *******************************************************************************/
-
 .container {
   & .navbar-header{
     margin-right: inherit;
@@ -58,22 +57,38 @@ body{
     padding-left: 0;  
   }
 }
+
 /*
 * Menus top
 *******************************************************************************/
 .region-top-top {
   background: transparent url(../images/fond_top.png) repeat-x 0 0;
+  & #block-menu-menu-top-first ul.menu>li.first>a{
+    margin-left: -20px;
+  }
   & ul.menu{ 
     background-color: @opale-cidff;
-    & >li>a{
-      color: white;
-      &:hover{
-        color: @gray-base;
+    & >li{
+      float: left;
+      & >a{
+        color: white;
+        &:hover{
+          color: @gray-base;
+        }
+        &:active{
+          color: @rouge-cidff;
+        }
+        &.active{
+          background-color: @rouge-cidff;
+        }
       }
     }
+
   }
   & #block-menu-menu-pros, & #block-menu-menu-commodit-s-haut{
-    border-left: 2px solid @gris-cidff;
+    & ul.menu > li.first a{
+      border-left: 2px solid @gris-cidff;
+    }
   }
 }
 
@@ -91,7 +106,7 @@ body{
     padding: 0;
     & a{
       display: block;
-      padding: 13px 13px 16px 13px;
+      padding: 13px 13px 13px 13px;
       font-weight: bold;
     }
   }
@@ -102,9 +117,9 @@ body{
       
     }
     &.active{
-      color: @gray-base;
-      background-color: inherit;
-      background: url(../images/white_line.gif) no-repeat 50% 75%;
+      color: white;
+      background-color: @rouge-cidff;
+      
     }
   }
 
@@ -138,7 +153,18 @@ form#search-block-form{
         background: url(../images/white_line.gif) no-repeat 50% 75%;
       }
     }
+  } 
+}
+/* facebook *******************************************************************/
+#block-bean-facebook{
+  float: right;
+  clear: both;
+  margin-top: 20px;
+  & a.icon-facebook{
+    &:hover{
+      color: @gray-base;
+      text-decoration: none;
+    }
   }
-  
 }
 
