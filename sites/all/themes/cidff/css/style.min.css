@@ -797,7 +797,7 @@ tbody.collapse.in{display:table-row-group}
 .dropdown-menu .divider{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5}
 .dropdown-menu>li>a{display:block;padding:3px 20px;clear:both;font-weight:400;line-height:1.42857143;color:#333;white-space:nowrap}
 .dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover{text-decoration:none;color:#262626;background-color:#f5f5f5}
-.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover{color:#fff;text-decoration:none;outline:0;background-color:#337ab7}
+.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover{color:#fff;text-decoration:none;outline:0}
 .dropdown-menu>.disabled>a,.dropdown-menu>.disabled>a:focus,.dropdown-menu>.disabled>a:hover{color:#777}
 .dropdown-menu>.disabled>a:focus,.dropdown-menu>.disabled>a:hover{text-decoration:none;background-color:transparent;background-image:none;filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);cursor:not-allowed}
 .open>.dropdown-menu{display:block}
@@ -1526,6 +1526,7 @@ table .checkbox input[type=checkbox],table .radio input[type=radio]{max-width:in
 img{max-width:100%}
 .no-content{text-indent:-9000px;display:block}
 .main-container{padding-top:20px}
+h2{font-family:MidietSansLight,arial;color:#00A5A7}
 .node .contour-orange{border:1px solid #f9a11b}
 .node .contour-opale{border:1px solid #02a5a8}
 .node .contour-gris{border:1px solid #c0cdd5}
@@ -1557,7 +1558,10 @@ body header#navbar{background:url(../images/fond_top.png) repeat-x}
 #main-nav ul.navbar-nav li a{display:block;padding:13px;font-weight:700}
 #main-nav>ul>li>a{color:#fff}
 #main-nav>ul>li>a:hover{color:#000}
-#main-nav>ul>li>a.active{color:#fff;background-color:#f7544c}
+#main-nav>ul>li>a .dropdown-menu>.active>a,#main-nav>ul>li>a.active{color:#fff;background-color:#f7544c}
+.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover{background-color:#f7544c}
+ul.nav li.dropdown:hover ul.dropdown-menu{display:block}
+ul.nav li.dropdown ul.dropdown-menu{margin-top:0}
 form#search-block-form{margin-top:20px;float:right;width:100%}
 @media screen and (min-width:768px){form#search-block-form{width:50%}}
 #block-menu-menu-actu-agenda{float:right;border-left:50px solid #fff;padding:0 10px}
@@ -1587,3 +1591,5 @@ footer.main-footer{background-color:#c0cdd5;min-height:100px}
 .node-ressource-documentaire .image{padding-left:15px}
 .node-ressource-documentaire .image img{vertical-align:middle;margin-bottom:6px}
 .node-ressource-documentaire .image a{font-size:1.2em}
+.view-ressources-doc.view-display-id-page td.views-field-field-scald-file.field-name-scald-file{float:left}
+.view-ressources-doc.view-display-id-page td.views-field-field-scald-file .field-name-scald-authors,.view-ressources-doc.view-display-id-page td.views-field-field-scald-file .field-name-scald-tags,.view-ressources-doc.view-display-id-page td.views-field-field-scald-file.field-name-scald-file .field-label{display:none}
