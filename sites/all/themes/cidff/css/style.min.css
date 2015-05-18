@@ -1537,7 +1537,6 @@ h2{font-family:MidietSansLight,arial;color:#00A5A7}
 .icon-youtube:before{content:"\e802"}
 .icon-googleplus:before{content:"\e803"}
 .no-marg-padd,body{margin:0;padding:0}
-body header#navbar{border:2px solid red}
 @media (min-width:768px){body header#navbar{background:url(../images/fond_top.png) repeat-x}}
 #skip-link{position:absolute;width:1px;height:1px;top:-1000em;overflow:hidden}
 .container .navbar-header{margin-right:inherit;margin-left:inherit;padding-left:0;float:none}
