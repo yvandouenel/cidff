@@ -20,6 +20,13 @@ function ressource_documentaire_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function ressource_documentaire_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function ressource_documentaire_node_info() {
@@ -29,7 +36,7 @@ function ressource_documentaire_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titre'),
       'help' => '',
     ),
   );
