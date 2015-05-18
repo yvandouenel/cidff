@@ -28,6 +28,7 @@ class views_plugin_style_table extends views_plugin_style {
     $options = parent::option_definition();
 
     $options['columns'] = array('default' => array());
+    $options['class'] = array('default' => array());
     $options['default'] = array('default' => '');
     $options['info'] = array('default' => array());
     $options['override'] = array('default' => TRUE, 'bool' => TRUE);
@@ -193,6 +194,14 @@ class views_plugin_style_table extends views_plugin_style {
       '#title' => t('Table summary'),
       '#description' => t('This value will be displayed as table-summary attribute in the html. Use this to give a summary of complex tables.'),
       '#default_value' => $this->options['summary'],
+      '#maxlength' => 255,
+    );
+
+    $form['class'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Table Class'),
+      '#description' => t('The CSS class names will be added to the table. You may define multiples classes separated by spaces.'),
+      '#default_value' => $this->options['class'],
       '#maxlength' => 255,
     );
 

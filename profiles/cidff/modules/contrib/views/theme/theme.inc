@@ -466,9 +466,24 @@ function template_preprocess_views_view_table(&$vars) {
   $vars['rows'] = array();
   $vars['field_classes'] = array();
   $vars['header'] = array();
+  $vars['classes_array'] = array();
 
   $options  = $view->style_plugin->options;
   $handler  = $view->style_plugin;
+
+  if (!empty($handler->options['class'])) {
+    $class = explode(' ', $handler->options['class']);
+    $class = array_map('views_clean_css_identifier', $class);
+
+    if (!empty($class)) {
+      // Trim empty class entries
+      foreach ($class as $key => $c) {
+        if (!empty($c)) {
+          $vars['classes_array'][] = $c;
+        }
+      }
+    }
+  }
 
   $default_row_class = isset($options['default_row_class']) ? $options['default_row_class'] : TRUE;
   $row_class_special = isset($options['row_class_special']) ? $options['row_class_special'] : TRUE;
@@ -634,7 +649,7 @@ function template_preprocess_views_view_table(&$vars) {
     $vars['row_classes'][count($vars['row_classes']) - 1][] = 'views-row-last';
   }
 
-  $vars['classes_array'] = array('views-table');
+  $vars['classes_array'][] = 'views-table';
   if (empty($vars['rows']) && !empty($options['empty_table'])) {
     $vars['rows'][0][0] = $view->display_handler->render_area('empty');
     // Calculate the amounts of rows with output.
