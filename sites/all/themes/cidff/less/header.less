@@ -5,7 +5,10 @@
 body{
   .no-marg-padd();
   & header#navbar{
-    background: transparent url(../images/fond_top.png) repeat-x 0 0;
+    @media (min-width: @screen-sm-min) {
+      background: transparent url(../images/fond_top.png) repeat-x 0 0;
+    }
+    border: 2px solid red;
   } 
 }
 
@@ -14,6 +17,7 @@ body{
   width: 1px;
   height: 1px;
   top: -1000em;
+  .0
   overflow: hidden; 
 }
 
@@ -52,12 +56,16 @@ body{
     & .col-md-6{
       padding-left: 0;
     }
+    @media screen and (max-width: @screen-sm){
+      h1{
+        margin:0;
+      }
+    }
   }
   & .navbar-collapse{
     padding-left: 0;  
   }
 }
-
 /*
 * Menus top
 *******************************************************************************/

@@ -1537,13 +1537,15 @@ h2{font-family:MidietSansLight,arial;color:#00A5A7}
 .icon-youtube:before{content:"\e802"}
 .icon-googleplus:before{content:"\e803"}
 .no-marg-padd,body{margin:0;padding:0}
-body header#navbar{background:url(../images/fond_top.png) repeat-x}
+body header#navbar{border:2px solid red}
+@media (min-width:768px){body header#navbar{background:url(../images/fond_top.png) repeat-x}}
 #skip-link{position:absolute;width:1px;height:1px;top:-1000em;overflow:hidden}
 .container .navbar-header{margin-right:inherit;margin-left:inherit;padding-left:0;float:none}
 .container .navbar-header #aude{color:#fff;display:block;background-color:#02a5a8;padding:4px;border-radius:4px;clear:both;width:100px;text-align:center;font-size:.8em}
 .container .navbar-header .slogan{font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;width:162px;border-top:1px solid #000;margin-left:193px;text-align:center}
 @media (max-width:768px){.container .navbar-header .slogan{text-align:left;margin-left:120px;width:120px}}
 .container .navbar-collapse,.container .navbar-header .col-md-6{padding-left:0}
+@media screen and (max-width:768px){.container .navbar-header h1{margin:0}}
 .region-top-top{background:url(../images/fond_top.png) repeat-x}
 .region-top-top #block-menu-menu-top-first ul.menu>li.first>a{margin-left:-20px}
 .region-top-top ul.menu{background-color:#02a5a8}
