@@ -1,0 +1,32 @@
+<?php
+/**
+ * @file
+ * Code for the Actions du CIDFF feature.
+ */
+
+include_once 'actions_du_cidff.features.inc';
+
+/**
+ * Implements hook_node_view_alter().
+ */
+/*function actions_du_cidff_node_view_alter(&$build) {
+//dpm("salut Boby");
+dpm($build);
+  // Timestamp for ten minutes ago
+  $time_since = time() - 600; 
+  
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+  // Filter by items created since timestamp (eg. in the last 10 minutes).
+    ->propertyCondition('created', $time_since, '>');
+  
+  $result = $query->execute();
+
+  if (isset($result['node'])) {
+    $news_items_nids = array_keys($result['node']);
+    $news_items = entity_load('node', $news_items_nids);
+  }
+}*/
+
+
+ 
