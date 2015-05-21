@@ -1557,7 +1557,7 @@ h2{font-family:MidietSansLight,arial;color:#00A5A7}
 #main-nav{clear:both;background-color:#f9a11b;height:46px;border-radius:0 0 6px 6px;padding-left:10px}
 #main-nav .navbar-brand{display:none}
 #main-nav ul.navbar-nav li{padding:0}
-#main-nav ul.navbar-nav li a{display:block;padding:14px;font-weight:700}
+#main-nav ul.navbar-nav li a{min-height:3.5em;display:block;padding:5px 14px 4px;font-weight:700}
 #main-nav #main-menu-cidff>ul>li>a{color:#fff}
 #main-nav #main-menu-cidff>ul>li>a:hover{color:#000}
 #main-nav #main-menu-cidff>ul>li>a .dropdown-menu>.active>a,#main-nav #main-menu-cidff>ul>li>a.active{color:#fff;background-color:#f7544c}
@@ -1568,7 +1568,7 @@ form#search-block-form{margin-top:20px;float:right;width:100%}
 @media screen and (min-width:768px){form#search-block-form{width:50%}}
 #block-menu-menu-actu-agenda{float:right;border-left:50px solid #fff;padding:0 10px;position:relative;top:-1px}
 #block-menu-menu-actu-agenda ul.menu.nav>li{float:left}
-#block-menu-menu-actu-agenda ul.menu.nav>li>a{padding:15px;display:block;color:#fff;font-weight:700}
+#block-menu-menu-actu-agenda ul.menu.nav>li>a{padding:5px 15px 4px;display:block;color:#fff;font-weight:700;min-height:3.55em}
 #block-menu-menu-actu-agenda ul.menu.nav>li>a:hover{color:#000}
 #block-menu-menu-actu-agenda ul.menu.nav>li>a.active{color:#000;background:url(../images/white_line.gif) 50% 75% no-repeat}
 #block-bean-facebook{float:right;clear:both;margin-top:20px}
@@ -1595,3 +1595,7 @@ footer.main-footer{background-color:#c0cdd5;min-height:100px}
 .node-ressource-documentaire .image a{font-size:1.2em}
 .view-ressources-doc.view-display-id-page td.views-field-field-scald-file.field-name-scald-file{float:left}
 .view-ressources-doc.view-display-id-page td.views-field-field-scald-file .field-name-scald-authors,.view-ressources-doc.view-display-id-page td.views-field-field-scald-file .field-name-scald-tags,.view-ressources-doc.view-display-id-page td.views-field-field-scald-file.field-name-scald-file .field-label{display:none}
+.date-display-start:before{content:'Du ';display:inline}
+.date-display-end:before{content:'au ';display:inline}
+.date-display-single .date-display-start:before{content:' de ';display:inline}
+.date-display-single .date-display-end:before{content:' à ';display:inline}
