@@ -69,7 +69,7 @@ class CerEndPointIterator implements RecursiveIterator {
    * Implements RecursiveIterator::hasChildren().
    */
   public function hasChildren() {
-    return ($this->field->child() instanceof CerEntityContainerInterface);
+    return ($this->field->child() instanceof CerFieldCollectionField);
   }
 
   /**
