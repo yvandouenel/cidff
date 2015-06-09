@@ -1557,7 +1557,7 @@ h2{font-family:MidietSansLight,arial;color:#00A5A7}
 #main-nav{clear:both;background-color:#f9a11b;height:46px;border-radius:0 0 6px 6px;padding-left:10px}
 #main-nav .navbar-brand{display:none}
 #main-nav ul.navbar-nav li{padding:0}
-#main-nav ul.navbar-nav li a{min-height:3.5em;display:block;padding:5px 14px 4px;font-weight:700}
+#main-nav ul.navbar-nav li a{min-height:3.5em;display:block;padding:5px 14px 4px;font-weight:700;text-align:center}
 #main-nav #main-menu-cidff>ul>li>a{color:#fff}
 #main-nav #main-menu-cidff>ul>li>a:hover{color:#000}
 #main-nav #main-menu-cidff>ul>li>a .dropdown-menu>.active>a,#main-nav #main-menu-cidff>ul>li>a.active{color:#fff;background-color:#f7544c}
