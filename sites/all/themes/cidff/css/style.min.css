@@ -1583,7 +1583,8 @@ form#search-block-form{margin-top:20px;float:right;width:100%}
 .webform-client-form input.form-text{width:150px}
 .webform-client-form .webform-component-email label{display:block}
 .node-action .field-group-div h3{height:60px;background:url(../images/black_line.gif) 0 100% no-repeat}
-.node-type-action #block-system-main .field-group-div.col-md-4{border:1px solid #f9a11b;border-radius:8px;margin-top:10px}
+.node-type-action #block-system-main .field-group-div.col-md-4 .wrapper-bottom{border:1px solid #f9a11b;border-radius:8px;margin-top:10px;margin-right:5px}
+.node-type-action #block-system-main .field-group-div.col-md-4 .wrapper-bottom.last{margin-right:0}
 footer.main-footer{background-color:#c0cdd5;min-height:100px}
 #block-menu-menu-menu-de-commodit-bas{margin:0 auto;display:block;float:none}
 #block-menu-menu-menu-de-commodit-bas ul.menu li{float:left}
