@@ -1560,8 +1560,8 @@ h2{font-family:MidietSansLight,arial;color:#00A5A7}
 #main-nav ul.navbar-nav li a{min-height:3.5em;display:block;padding:5px 14px 4px;font-weight:700;text-align:center}
 #main-nav #main-menu-cidff>ul>li>a{color:#fff}
 #main-nav #main-menu-cidff>ul>li>a:hover{color:#000}
-#main-nav #main-menu-cidff>ul>li>a .dropdown-menu>.active>a,#main-nav #main-menu-cidff>ul>li>a.active{color:#fff;background-color:#f7544c}
-.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover{background-color:#f7544c}
+#main-nav #main-menu-cidff>ul>li>a .dropdown-menu>.active>a,#main-nav #main-menu-cidff>ul>li>a.active{color:#fff;background-color:#c0cdd5}
+.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover{background-color:#c0cdd5}
 ul.nav li.dropdown:hover ul.dropdown-menu{display:block}
 ul.nav li.dropdown ul.dropdown-menu{margin-top:0}
 form#search-block-form{margin-top:20px;float:right;width:100%}
