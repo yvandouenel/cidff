@@ -1551,8 +1551,8 @@ h2{font-family:MidietSansLight,arial;color:#00A5A7}
 .region-top-top ul.menu>li{float:left}
 .region-top-top ul.menu>li>a{color:#fff}
 .region-top-top ul.menu>li>a:hover{color:#000}
-.region-top-top ul.menu>li>a:active{color:#f7544c}
-.region-top-top ul.menu>li>a.active{background-color:#f7544c}
+.region-top-top ul.menu>li>a:active{color:#c0cdd5}
+.region-top-top ul.menu>li>a.active{background-color:#c0cdd5}
 .region-top-top #block-menu-menu-commodit-s-haut ul.menu>li.first a,.region-top-top #block-menu-menu-pros ul.menu>li.first a{border-left:2px solid #c0cdd5}
 #main-nav{clear:both;background-color:#f9a11b;height:46px;border-radius:0 0 6px 6px;padding-left:10px}
 #main-nav .navbar-brand{display:none}
