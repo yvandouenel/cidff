@@ -1601,3 +1601,4 @@ footer.main-footer{background-color:#c0cdd5;min-height:100px}
 .date-display-end:before{content:'au ';display:inline}
 .date-display-single .date-display-start:before{content:' de ';display:inline}
 .date-display-single .date-display-end:before{content:' à ';display:inline}
+.node-type-action .panel-title{color:#f9a11b;font-weight:700}
