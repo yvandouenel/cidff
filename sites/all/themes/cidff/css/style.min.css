@@ -1558,7 +1558,8 @@ h2{font-family:MidietSansLight,arial;color:#00A5A7}
 #main-nav ul.navbar-nav li{padding:0}
 #main-nav ul.navbar-nav li a{min-height:50px;display:block;padding:6px 14px 4px;font-weight:700;text-align:center;margin-top:-1px}
 #main-nav #main-menu-cidff>ul>li>a{color:#fff}
-#main-nav #main-menu-cidff>ul>li>a .dropdown-menu>.active>a,#main-nav #main-menu-cidff>ul>li>a.active,#main-nav #main-menu-cidff>ul>li>a:hover{color:#000;background-color:#c0cdd5}
+#main-nav #main-menu-cidff>ul>li>a:hover{color:#000;background-color:#eee}
+#main-nav #main-menu-cidff>ul>li>a .dropdown-menu>.active>a,#main-nav #main-menu-cidff>ul>li>a.active{color:#000;background-color:#c0cdd5}
 .dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover{background-color:#c0cdd5}
 ul.nav li.dropdown:hover ul.dropdown-menu{display:block}
 ul.nav li.dropdown ul.dropdown-menu{margin-top:0}
