@@ -76,13 +76,13 @@
 <header id="navbar" role="banner">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
-        <div class="navbar-collapse collapse">
-          <nav role="navigation">
-            <?php print render($page['top_top']); ?>
-          </nav>
+        <div class="col-sm-12">
+            <div class="navbar-collapse collapse">
+                <nav role="navigation">
+                    <?php print render($page['top_top']); ?>
+                </nav>
+            </div>
         </div>
-      </div>
     </div>
   </div>
   <div class="container">
@@ -107,13 +107,7 @@
         <?php if (!empty($page['right_logo'])): ?>
 
           <?php print render($page['right_logo']); ?>
-            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+
         <?php endif; ?>
       </div>  
     </div>
@@ -122,6 +116,16 @@
       
     <nav class="navbar navbar-default" id="main-nav">
     <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-cidff">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="main-menu-cidff">
       <?php if (!empty($primary_nav)): ?>
