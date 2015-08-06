@@ -78,7 +78,7 @@ body{
       background-color: white;
       position: absolute;
       top: 30px;
-      left: 60%;
+      right: 0%;
       z-index: 9999;
     }
     background-color: @opale-cidff;
@@ -111,6 +111,9 @@ body{
   & #block-menu-menu-pros, & #block-menu-menu-commodit-s-haut{
     & ul.menu > li.first a{
       border-left: 2px solid @gris-cidff;
+      @media screen and (max-width: @screen-sm) {
+        border-left: 0;
+      }
     }
   }
 }
