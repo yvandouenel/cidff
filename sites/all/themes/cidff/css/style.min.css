@@ -1557,7 +1557,9 @@ h2{font-family:MidietSansLight,arial;color:#00A5A7}
 #main-nav .navbar-brand{display:none}
 #main-nav ul.navbar-nav li{padding:0}
 #main-nav ul.navbar-nav li a{min-height:50px;display:block;padding:6px 14px 4px;font-weight:700;text-align:center;margin-top:-1px}
+@media screen and (max-width:768px){#main-nav ul.navbar-nav li ul{display:none}}
 #main-nav #main-menu-cidff>ul>li>a{color:#fff}
+@media screen and (max-width:768px){#main-nav #main-menu-cidff>ul>li>a{color:#000;padding:5px 0;background-color:#eee;z-index:9999}}
 #main-nav #main-menu-cidff>ul>li>a:hover{color:#000;background-color:#eee}
 #main-nav #main-menu-cidff>ul>li>a .dropdown-menu>.active>a,#main-nav #main-menu-cidff>ul>li>a.active{color:#000;background-color:#c0cdd5}
 .dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover{background-color:#c0cdd5}
