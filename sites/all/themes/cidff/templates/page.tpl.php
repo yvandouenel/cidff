@@ -77,7 +77,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="navbar-collapse collapse">
+        <div class="">
           <nav role="navigation">
             <?php print render($page['top_top']); ?>
           </nav>
