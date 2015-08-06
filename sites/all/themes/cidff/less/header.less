@@ -72,12 +72,29 @@ body{
   & #block-menu-menu-top-first ul.menu>li.first>a{
     margin-left: -20px;
   }
-  & ul.menu{ 
+  & ul.menu{
+    @media screen and (max-width: @screen-sm) {
+      float: right;
+      background-color: white;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      z-index: 9999;
+    }
     background-color: @opale-cidff;
-    & >li{
+    >li{
+      &.last{
+        @media screen and (max-width: @screen-sm) {
+          display: none;
+        }
+      }
       float: left;
-      & >a{
+      >a{
         color: white;
+        @media screen and (max-width: @screen-sm) {
+          color: @gray-base;
+        }
+
         &:hover{
           color: @orange-cidff;
         }
