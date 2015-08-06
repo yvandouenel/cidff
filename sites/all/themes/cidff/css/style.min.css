@@ -1548,7 +1548,7 @@ h2{font-family:MidietSansLight,arial;color:#00A5A7}
 .region-top-top{background:url(../images/fond_top.png) repeat-x}
 .region-top-top #block-menu-menu-top-first ul.menu>li.first>a{margin-left:-20px}
 .region-top-top ul.menu{background-color:#02a5a8}
-@media screen and (max-width:768px){.region-top-top ul.menu{float:right;background-color:#fff;position:absolute;top:30px;left:60%;z-index:9999}}
+@media screen and (max-width:768px){.region-top-top ul.menu{float:right;background-color:#fff;position:absolute;top:30px;right:0;z-index:9999}}
 .region-top-top ul.menu>li{float:left}
 @media screen and (max-width:768px){.region-top-top ul.menu>li.last{display:none}}
 .region-top-top ul.menu>li>a{color:#fff}
@@ -1556,6 +1556,7 @@ h2{font-family:MidietSansLight,arial;color:#00A5A7}
 .region-top-top ul.menu>li>a:active,.region-top-top ul.menu>li>a:hover{color:#f9a11b}
 .region-top-top ul.menu>li>a.active{background-color:#c0cdd5}
 .region-top-top #block-menu-menu-commodit-s-haut ul.menu>li.first a,.region-top-top #block-menu-menu-pros ul.menu>li.first a{border-left:2px solid #c0cdd5}
+@media screen and (max-width:768px){.region-top-top #block-menu-menu-commodit-s-haut ul.menu>li.first a,.region-top-top #block-menu-menu-pros ul.menu>li.first a{border-left:0}}
 #main-nav{clear:both;background-color:#f9a11b;height:46px;border-radius:0 0 6px 6px;padding-left:10px}
 #main-nav .navbar-brand{display:none}
 #main-nav ul.navbar-nav li{padding:0}
