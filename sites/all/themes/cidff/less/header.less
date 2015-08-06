@@ -114,21 +114,22 @@ body{
   & ul.navbar-nav li {
     padding: 0;
     & a{
-      min-height: 3.5em;
+      min-height: 50px;
       display: block;
-      padding: 5px 14px 4px 14px;
+      padding: 6px 14px 4px 14px;
       font-weight: bold;
       text-align: center;
+      margin-top: -1px;
     }
   }
   & #main-menu-cidff > ul>li>a{
     color: white;
     &:hover{
       color: @gray-base;
-      
+      background-color: @gris-cidff;
     }
     &.active, & .dropdown-menu > .active > a{
-      color: @orange-cidff;
+      color: @gray-base;
       background-color: @gris-cidff;
     }
   }
