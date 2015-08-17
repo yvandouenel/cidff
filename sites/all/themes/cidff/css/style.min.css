@@ -1564,6 +1564,7 @@ h2{font-family:MidietSansLight,arial;color:#00A5A7}
 #main-nav ul.navbar-nav li{padding:0}
 #main-nav ul.navbar-nav li a{min-height:50px;display:block;padding:6px 14px 4px;font-weight:700;text-align:center;margin-top:-1px}
 @media screen and (max-width:768px){#main-nav ul.navbar-nav li ul{display:none}}
+#main-nav ul.navbar-nav li ul li a{text-align:left}
 #main-nav #main-menu-cidff>ul>li>a{color:#fff}
 @media screen and (max-width:768px){#main-nav #main-menu-cidff>ul>li>a{color:#000;padding:5px 0;background-color:#eee;z-index:9999}}
 #main-nav #main-menu-cidff>ul>li>a:hover{color:#000;background-color:#eee}
@@ -1599,6 +1600,7 @@ footer.main-footer{background-color:#c0cdd5;min-height:100px}
 #block-menu-menu-menu-de-commodit-bas ul.menu li a:hover{color:#000}
 .view-display-id-block_partner1{display:table;margin:0 auto}
 .view-display-id-block_partner1 .views-row{display:inline-table;margin:5px 5px 0 0;vertical-align:bottom}
+.view-display-id-block_home_zoom .views-field-body h3{font-size:1em}
 .node-ressource-documentaire .image{padding-left:15px}
 .node-ressource-documentaire .image img{vertical-align:middle;margin-bottom:6px}
 .node-ressource-documentaire .image a{font-size:1.2em}
