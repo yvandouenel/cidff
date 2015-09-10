@@ -74,20 +74,13 @@ body{
   }
   & ul.menu{
     @media screen and (max-width: @screen-sm) {
-      float: right;
+      float: left;
       background-color: white;
-      position: absolute;
-      top: 30px;
-      right: 0%;
-      z-index: 9999;
+
     }
     background-color: @opale-cidff;
     >li{
-      &.last{
-        @media screen and (max-width: @screen-sm) {
-          display: none;
-        }
-      }
+
       float: left;
       >a{
         color: white;
@@ -113,7 +106,15 @@ body{
       border-left: 2px solid @gris-cidff;
       @media screen and (max-width: @screen-sm) {
         border-left: 0;
+        float: left;
+        clear: none;
       }
+    }
+  }
+  & #block-menu-menu-commodit-s-haut li.first,
+  & #block-menu-menu-commodit-s-haut li.last{
+    @media screen and (max-width: @screen-sm) {
+      display: none;
     }
   }
 }
